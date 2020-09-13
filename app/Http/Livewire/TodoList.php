@@ -16,4 +16,13 @@ class TodoList extends Component
 
         return view('livewire.todo-list', compact('todos'));
     }
+
+    /**
+     * remove ?page= from url
+     * @return array
+     */
+    public function getQueryString()
+    {
+        return [];
+    }
 }
